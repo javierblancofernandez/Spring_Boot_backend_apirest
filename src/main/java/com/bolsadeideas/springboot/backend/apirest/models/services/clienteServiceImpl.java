@@ -19,6 +19,15 @@ public class clienteServiceImpl implements IClienteServices {
 	public List<cliente> findAll(){
 		
 		return (List<cliente>) clienteDao.findAll();
+		
 	}
+	@Override
+	public void saveAll(List<cliente> clientes) {
+		// TODO Auto-generated method stub
+		clienteDao.saveAll(clientes);
+		
+	}
+	
+	
 
 }
